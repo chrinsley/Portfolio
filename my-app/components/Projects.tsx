@@ -18,7 +18,7 @@ const projects = [
     tags: ["Java", "OOP", "MySQL"],
     gradient: "from-cyan-500/20 to-blue-500/20",
     codeUrl: `https://github.com/${site.githubUsername}/football-management`,
-    demoUrl: "https://your-demo-url.com/football",
+    demoUrl: "http://51.21.96.93:3000/",
   },
   {
     title: "Food Ordering App",
