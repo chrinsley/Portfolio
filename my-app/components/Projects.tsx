@@ -32,11 +32,11 @@ const projects = [
   {
     title: "To-Do App",
     description:
-      "Flutter application connected to a Django API with real-time sync.",
-    tags: ["Flutter", "Django", "REST API"],
+      "Web application connected to a Django API with real-time sync.",
+    tags: ["React", "Django", "REST API", "GitHub", "Vercel", "Railway"],
     gradient: "from-violet-500/20 to-purple-500/20",
-    codeUrl: `https://github.com/${site.githubUsername}/todo-app`,
-    demoUrl: "https://your-demo-url.com/todo",
+    codeUrl: `https://github.com/${site.githubUsername}/To-Do-App.git`,
+    demoUrl: "https://to-do-app-chrinsley.vercel.app/",
   },
 ];
 
