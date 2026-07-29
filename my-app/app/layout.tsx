@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Chrinsley James | Software Engineer",
-  description: "Portfolio of Chrinsley James — Software Engineering Student",
+  title: "Chrinsley James | Full-Stack & AI Developer",
+  description:
+    "Portfolio of Cocotte Chrinsley James — Software Engineering Student focused on full-stack development and AI / ML.",
 };
 
 export default function RootLayout({

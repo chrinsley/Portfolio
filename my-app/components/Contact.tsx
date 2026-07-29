@@ -16,7 +16,7 @@ const contacts = [
   },
   {
     label: "LinkedIn",
-    value: `linkedin.com/in/${site.githubUsername}`,
+    value: site.linkedinDisplay,
     href: site.linkedin,
     icon: "🔗",
   },

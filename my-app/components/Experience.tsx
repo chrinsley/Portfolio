@@ -2,16 +2,40 @@ import FadeIn from "@/components/FadeIn";
 
 const experiences = [
   {
-    title: "Software Developer Intern",
-    company: "Unstop",
-    period: "Sep 2024 - Present",
+    title: "Software Engineer Intern",
+    company: "Active Services Digital – Websites, eCommerce and SEO",
+    location: "Port Louis, Mauritius · On-site",
+    period: "Apr 2026 – Jul 2026",
     highlights: [
-      "Developed and maintained backend services using Django REST Framework",
-      "Built automation workflows with n8n to streamline internal processes",
-      "Collaborated in an Agile team using Jira and Git for version control",
-      "Set up and managed CI/CD pipelines with Jenkins for automated deployments",
+      "Built and maintained full-stack web applications end to end",
+      "Delivered data-driven features including interactive dashboards and reporting tools",
+      "Optimized database performance and query efficiency",
     ],
-    tags: ["n8n", "REST APIs", "Git", "Jenkins", "Jira"],
+    tags: ["Full-Stack", "Dashboards", "Databases"],
+  },
+  {
+    title: "Administrative Assistant · Part-time",
+    company: "Wally Plush Toys",
+    location: "Black River, Mauritius · On-site",
+    period: "Feb 2025 – Jul 2025",
+    highlights: [
+      "Maintained digital and physical filing systems, updated databases, and typed documents",
+      "Stocked office supplies and tracked deliveries",
+      "Logged sales records with the exact calendar date of each transaction",
+    ],
+    tags: ["Administration", "Databases", "Operations"],
+  },
+  {
+    title: "Logistics Coordinator · Part-time",
+    company: "STAR KNITWEAR",
+    location: "Beau Bassin, Plaines Wilhems, Mauritius · On-site",
+    period: "Oct 2022 – Dec 2022",
+    highlights: [
+      "Delivered sensitive messages, legal documents, and small packages quickly and securely",
+      "Packed and labeled warehouse items to prepare them for delivery drivers",
+      "Assisted drivers with drop-offs of packages and goods to manufacturers and retailers",
+    ],
+    tags: ["Logistics", "Coordination", "Operations"],
   },
 ];
 
@@ -28,25 +52,22 @@ export default function Experience() {
       </FadeIn>
 
       <div className="relative">
-        {/* Timeline line */}
         <div
           className="absolute left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-purple-500/50 via-white/10 to-transparent"
           aria-hidden
         />
 
         {experiences.map((exp, i) => (
-          <FadeIn key={exp.title} delay={i * 120}>
-            <div className="relative pl-10 sm:pl-12 pb-4 last:pb-0">
-              {/* Timeline dot */}
+          <FadeIn key={`${exp.company}-${exp.title}`} delay={i * 120}>
+            <div className="relative pl-10 sm:pl-12 pb-10 last:pb-0">
               <div
                 className="timeline-dot absolute left-0 top-8"
                 aria-hidden
               />
 
-              {/* Card */}
               <div className="gradient-border group">
                 <div className="glass-card rounded-2xl p-6 sm:p-8 transition-transform duration-300 group-hover:-translate-y-0.5">
-                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-6">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
                     <div>
                       <h3 className="text-xl sm:text-2xl font-bold text-white">
                         {exp.title}
@@ -59,6 +80,8 @@ export default function Experience() {
                       {exp.period}
                     </p>
                   </div>
+
+                  <p className="text-gray-500 text-sm mb-6">{exp.location}</p>
 
                   <ul className="space-y-3 mb-8">
                     {exp.highlights.map((item) => (

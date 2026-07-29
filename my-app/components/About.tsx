@@ -4,9 +4,7 @@ export default function About() {
   return (
     <section id="about" className="relative max-w-6xl mx-auto px-6 py-32">
       <FadeIn>
-        <h2 className="section-heading text-4xl font-bold mb-16">
-          About Me
-        </h2>
+        <h2 className="section-heading text-4xl font-bold mb-16">About Me</h2>
       </FadeIn>
 
       <FadeIn delay={150}>
@@ -30,14 +28,32 @@ export default function About() {
                 {"  "}
                 <span className="property">name</span>
                 <span className="bracket">:</span>{" "}
-                <span className="string">&quot;Chrinsley&quot;</span>
+                <span className="string">
+                  &quot;Cocotte Chrinsley James&quot;
+                </span>
                 <span className="bracket">,</span>
                 {"\n"}
                 {"  "}
                 <span className="property">role</span>
                 <span className="bracket">:</span>{" "}
                 <span className="string">
-                  &quot;Software Engineering Student&quot;
+                  &quot;Full-Stack &amp; AI Developer&quot;
+                </span>
+                <span className="bracket">,</span>
+                {"\n"}
+                {"  "}
+                <span className="property">education</span>
+                <span className="bracket">:</span>{" "}
+                <span className="string">
+                  &quot;B.Sc.(Hons) Software Engineering&quot;
+                </span>
+                <span className="bracket">,</span>
+                {"\n"}
+                {"  "}
+                <span className="property">university</span>
+                <span className="bracket">:</span>{" "}
+                <span className="string">
+                  &quot;Université des Mascareignes / University of Limoges&quot;
                 </span>
                 <span className="bracket">,</span>
                 {"\n\n"}
@@ -46,7 +62,15 @@ export default function About() {
                 <span className="bracket">: [</span>
                 {"\n"}
                 {"    "}
+                <span className="string">&quot;Python&quot;</span>
+                <span className="bracket">,</span>
+                {"\n"}
+                {"    "}
                 <span className="string">&quot;Java&quot;</span>
+                <span className="bracket">,</span>
+                {"\n"}
+                {"    "}
+                <span className="string">&quot;TypeScript&quot;</span>
                 <span className="bracket">,</span>
                 {"\n"}
                 {"    "}
@@ -54,15 +78,11 @@ export default function About() {
                 <span className="bracket">,</span>
                 {"\n"}
                 {"    "}
-                <span className="string">&quot;Flutter&quot;</span>
+                <span className="string">&quot;React / Next.js&quot;</span>
                 <span className="bracket">,</span>
                 {"\n"}
                 {"    "}
-                <span className="string">&quot;Python&quot;</span>
-                <span className="bracket">,</span>
-                {"\n"}
-                {"    "}
-                <span className="string">&quot;REST APIs&quot;</span>
+                <span className="string">&quot;Spring Boot&quot;</span>
                 {"\n"}
                 {"  "}
                 <span className="bracket">],</span>
@@ -71,7 +91,7 @@ export default function About() {
                 <span className="property">passion</span>
                 <span className="bracket">:</span>{" "}
                 <span className="string">
-                  &quot;Building useful applications&quot;
+                  &quot;Building modern, scalable web apps&quot;
                 </span>
                 <span className="bracket">,</span>
                 {"\n\n"}
@@ -79,7 +99,7 @@ export default function About() {
                 <span className="property">currentlyLearning</span>
                 <span className="bracket">:</span>{" "}
                 <span className="string">
-                  &quot;Advanced Algorithms&quot;
+                  &quot;AI / ML, RAG systems &amp; LLMs&quot;
                 </span>
                 {"\n"}
                 <span className="bracket">{"};"}</span>

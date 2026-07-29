@@ -3,40 +3,31 @@ import { site } from "@/lib/site";
 
 const projects = [
   {
-    title: "Library Management System",
-    description:
-      "A Django application for managing books and borrowers with full CRUD operations.",
-    tags: ["Django", "Python", "SQL"],
-    gradient: "from-purple-500/20 to-indigo-500/20",
-    codeUrl: `https://github.com/${site.githubUsername}/library-management`,
-    demoUrl: "https://your-demo-url.com/library",
-  },
-  {
     title: "Football Management System",
     description:
-      "Manage players, fixtures, and team statistics with an intuitive dashboard.",
-    tags: ["Java", "OOP", "MySQL"],
+      "Full-stack football management system built with Spring Boot to handle teams, players, and match records, backed by a PostgreSQL database for club and fixture data.",
+    tags: ["Spring Boot", "Java", "PostgreSQL", "GitLab"],
     gradient: "from-cyan-500/20 to-blue-500/20",
-    codeUrl: `https://github.com/${site.githubUsername}/football-management`,
+    codeUrl: `https://github.com/${site.githubUsername}`,
     demoUrl: "http://51.21.96.93:3000/",
   },
   {
-    title: "Food Ordering App",
+    title: "Todo Web App",
     description:
-      "Android frontend with Django REST backend for seamless food ordering.",
-    tags: ["Flutter", "Django REST", "Android"],
-    gradient: "from-emerald-500/20 to-teal-500/20",
-    codeUrl: `https://github.com/${site.githubUsername}/food-ordering-app`,
-    demoUrl: "https://your-demo-url.com/food-ordering",
+      "Full-stack todo application with a React + Vite front-end and a Django REST API back-end. Front-end deployed on Vercel and back-end on Railway.",
+    tags: ["React", "Vite", "Django", "REST API", "Vercel", "Railway"],
+    gradient: "from-violet-500/20 to-purple-500/20",
+    codeUrl: `https://github.com/${site.githubUsername}/To-Do-App`,
+    demoUrl: "https://to-do-app-chrinsley.vercel.app/",
   },
   {
-    title: "To-Do App",
+    title: "AI & RAG Experiments",
     description:
-      "Web application connected to a Django API with real-time sync.",
-    tags: ["React", "Django", "REST API", "GitHub", "Vercel", "Railway"],
-    gradient: "from-violet-500/20 to-purple-500/20",
-    codeUrl: `https://github.com/${site.githubUsername}/To-Do-App.git`,
-    demoUrl: "https://to-do-app-chrinsley.vercel.app/",
+      "Hands-on AI projects with PyTorch while learning LLMs and Retrieval-Augmented Generation (RAG) pipelines.",
+    tags: ["PyTorch", "RAG", "LLMs", "Deep Learning"],
+    gradient: "from-emerald-500/20 to-teal-500/20",
+    codeUrl: `https://github.com/${site.githubUsername}`,
+    demoUrl: null,
   },
 ];
 
@@ -89,14 +80,16 @@ export default function Projects() {
                   >
                     Code
                   </a>
-                  <a
-                    href={project.demoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-primary relative z-10 text-sm px-5 py-2 rounded-lg font-medium text-white"
-                  >
-                    Demo
-                  </a>
+                  {project.demoUrl && (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary relative z-10 text-sm px-5 py-2 rounded-lg font-medium text-white"
+                    >
+                      Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

@@ -1,7 +1,6 @@
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
-      {/* Background effects */}
       <div className="absolute inset-0 grid-pattern opacity-40" />
       <div className="bg-orb w-[500px] h-[500px] bg-purple-600/20 top-[-10%] left-[-10%] animate-float-slow" />
       <div className="bg-orb w-[400px] h-[400px] bg-cyan-500/15 bottom-[-5%] right-[-5%] animate-float-slow [animation-delay:300ms]" />
@@ -17,13 +16,13 @@ export default function Hero() {
         </h1>
 
         <h2 className="text-xl sm:text-2xl text-gray-300 mb-8 animate-fade-up [animation-delay:200ms]">
-          Software Engineering Student
+          Software Engineering Student | Full-Stack &amp; AI Developer
         </h2>
 
         <p className="text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up [animation-delay:300ms]">
-          Passionate about backend development, mobile applications, and solving
-          real-world problems using Java, Django, Flutter, and modern
-          technologies.
+          Passionate about building modern, user-friendly web applications and
+          learning Artificial Intelligence. I enjoy creating scalable apps and
+          continuously improving my skills, with a growing focus in AI / ML.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-up [animation-delay:400ms]">
@@ -42,7 +41,6 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Scroll indicator */}
         <div className="absolute -bottom-32 left-1/2 -translate-x-1/2 animate-fade-in [animation-delay:800ms]">
           <div className="flex flex-col items-center gap-2 text-gray-500">
             <span className="text-xs tracking-widest uppercase">Scroll</span>

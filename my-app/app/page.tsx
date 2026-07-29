@@ -16,8 +16,8 @@ export default function Home() {
       <Contact />
       <footer className="border-t border-white/5 py-8 text-center text-sm text-gray-500">
         <p>
-          &copy; {new Date().getFullYear()} Chrinsley James. Built with Next.js
-          &amp; Tailwind CSS.
+          &copy; {new Date().getFullYear()} Cocotte Chrinsley James. Built with
+          Next.js &amp; Tailwind CSS.
         </p>
       </footer>
     </main>
