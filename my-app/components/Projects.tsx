@@ -38,8 +38,8 @@ const projects = [
     gradient: "from-emerald-500/20 to-teal-500/20",
     // codeUrl: `https://github.com/${site.githubUsername}`,
     // demoUrl: null,
-    codeUrl:'null',
-    demoUrl:'null'
+    codeUrl:"",
+    demoUrl:null
   },
 ];
 
@@ -92,6 +92,7 @@ export default function Projects() {
                   >
                     Code
                   </a>
+                  
                   {project.demoUrl && (
                     <a
                       href={project.demoUrl}
@@ -101,6 +102,15 @@ export default function Projects() {
                     >
                       Demo
                     </a>
+                  )}
+
+                   {!project.demoUrl && (
+                     <a
+    href="#" 
+    className="btn-primary relative z-10 text-sm px-5 py-2 rounded-lg font-medium text-white"
+  >
+    Soon
+  </a>
                   )}
 
                 </div>
