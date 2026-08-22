@@ -104,7 +104,12 @@ export default function Projects() {
                   )}
 
                    {!project.demoUrl && (
-                    <p>soon</p>
+                     <a
+    href="#" 
+    className="btn-primary relative z-10 text-sm px-5 py-2 rounded-lg font-medium text-white"
+  >
+    Soon
+  </a>
                   )}
 
                 </div>
