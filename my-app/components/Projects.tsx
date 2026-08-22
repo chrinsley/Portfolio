@@ -29,6 +29,18 @@ const projects = [
     codeUrl: `https://github.com/${site.githubUsername}`,
     demoUrl: null,
   },
+
+  {
+    title: "LocalEvent in Mauritius",
+    description:
+      "Local event platform aims to keep people updated on cultural festivals, concerts, and gatherings. They let users check schedules about upcoming activities across the island",
+    tags: ["Next.js", "Django", "Websocket", "Rest API"],
+    gradient: "from-emerald-500/20 to-teal-500/20",
+    // codeUrl: `https://github.com/${site.githubUsername}`,
+    // demoUrl: null,
+    codeUrl:'soon',
+    demo:'soon'
+  },
 ];
 
 export default function Projects() {
