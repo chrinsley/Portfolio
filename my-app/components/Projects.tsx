@@ -39,7 +39,7 @@ const projects = [
     // codeUrl: `https://github.com/${site.githubUsername}`,
     // demoUrl: null,
     codeUrl:'soon',
-    demo:'soon'
+    demoUrl:'soon'
   },
 ];
 
@@ -102,6 +102,11 @@ export default function Projects() {
                       Demo
                     </a>
                   )}
+
+                   {!project.demoUrl && (
+                    <p>soon</p>
+                  )}
+
                 </div>
               </div>
             </div>
