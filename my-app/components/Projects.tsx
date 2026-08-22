@@ -38,8 +38,8 @@ const projects = [
     gradient: "from-emerald-500/20 to-teal-500/20",
     // codeUrl: `https://github.com/${site.githubUsername}`,
     // demoUrl: null,
-    codeUrl:'soon',
-    demoUrl:'soon'
+    codeUrl:'null',
+    demoUrl:'null'
   },
 ];
 
