@@ -80,9 +80,7 @@ export default function About() {
                 {"    "}
                 <span className="string">&quot;React / Next.js&quot;</span>
                 <span className="bracket">,</span>
-                {"\n"}
-                {"    "}
-                <span className="string">&quot;Spring Boot&quot;</span>
+              
                 {"\n"}
                 {"  "}
                 <span className="bracket">],</span>

@@ -20,7 +20,6 @@ const skillGroups = [
       { name: "Django REST", icon: "🔗" },
       { name: "React.js", icon: "⚛️" },
       { name: "Next.js", icon: "▲" },
-      { name: "Spring Boot", icon: "🍃" },
       { name: "Tailwind CSS", icon: "💨" },
     ],
   },
